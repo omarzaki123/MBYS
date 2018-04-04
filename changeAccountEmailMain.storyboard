@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="calibril.ttf">
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="changeAccountEmail" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon sidebar settings.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bwd-SO-M2O">
+                                <rect key="frame" x="30" y="28" width="37" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="70C-PJ-XMJ"/>
+                                    <constraint firstAttribute="width" constant="37" id="c6l-9v-UQ0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Account Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vt-2J-uPb">
+                                <rect key="frame" x="72" y="34" width="233" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="233" id="alL-Ev-Gaq"/>
+                                    <constraint firstAttribute="height" constant="25" id="hsI-ve-dYr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZF-pK-OCo">
+                                <rect key="frame" x="207" y="286" width="186" height="30"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HCS-vx-q0Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="123" height="30"/>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4R-PU-6hF">
+                                        <rect key="frame" x="123" y="0.0" width="63" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="g6z-MZ-KDg"/>
+                                            <constraint firstAttribute="width" constant="63" id="zIk-by-Vxs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="21"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" red="0.97254901959999995" green="0.15686274510000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveEmail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4xz-bL-1x9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="186" id="Ivh-DC-5uw"/>
+                                    <constraint firstAttribute="height" constant="30" id="zzT-Nn-cOU"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RyB-JL-YKK">
+                                <rect key="frame" x="207" y="93" width="186" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1q-Qd-hrv">
+                                        <rect key="frame" x="0.0" y="0.0" width="186" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="DMH-d8-gDj"/>
+                                            <constraint firstAttribute="width" constant="186" id="alm-0m-7xP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0Wi-xU-OUR">
+                                        <rect key="frame" x="0.0" y="21" width="186" height="8"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="8" id="Ksx-ur-nxF"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="akashw@stanford.edu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jju-OO-I80">
+                                        <rect key="frame" x="0.0" y="29" width="186" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="159" id="9tS-Pd-f1Z"/>
+                                            <constraint firstAttribute="height" constant="21" id="era-lz-jpB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="186" id="fiE-YG-kgN"/>
+                                    <constraint firstAttribute="height" constant="50" id="v3M-fT-fVh"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aql-FS-WvB">
+                                <rect key="frame" x="207" y="178" width="186" height="59"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3h5-Hx-sYL">
+                                        <rect key="frame" x="0.0" y="0.0" width="186" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="Dgl-bb-tEl"/>
+                                            <constraint firstAttribute="width" constant="186" id="GFJ-iM-1sE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YNp-1h-4t9">
+                                        <rect key="frame" x="0.0" y="21" width="186" height="8"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="8" id="Hqq-KD-sLL"/>
+                                        </constraints>
+                                    </stackView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="testing@stanford.edu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rrt-id-C8F">
+                                        <rect key="frame" x="0.0" y="29" width="186" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="3rh-Jw-nZv"/>
+                                            <constraint firstAttribute="width" constant="188" id="Lvs-o6-esX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="186" id="LNV-ah-Wk1"/>
+                                    <constraint firstAttribute="height" constant="59" id="QE1-65-SGX"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aql-FS-WvB" firstAttribute="top" secondItem="RyB-JL-YKK" secondAttribute="bottom" constant="35" id="2FI-EB-TDD"/>
+                            <constraint firstItem="Bwd-SO-M2O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="2fn-8u-Eyp"/>
+                            <constraint firstItem="qZF-pK-OCo" firstAttribute="top" secondItem="aql-FS-WvB" secondAttribute="bottom" constant="49" id="4gp-Vx-pfq"/>
+                            <constraint firstItem="Bwd-SO-M2O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="6Ti-0X-yE6"/>
+                            <constraint firstItem="qZF-pK-OCo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bbp-8X-RCc"/>
+                            <constraint firstItem="aql-FS-WvB" firstAttribute="top" secondItem="RyB-JL-YKK" secondAttribute="bottom" constant="37" id="EUL-67-JOC"/>
+                            <constraint firstItem="7Vt-2J-uPb" firstAttribute="leading" secondItem="Bwd-SO-M2O" secondAttribute="trailing" constant="5" id="Y4O-g0-ZWu"/>
+                            <constraint firstItem="aql-FS-WvB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z1H-Ku-OUb"/>
+                            <constraint firstItem="RyB-JL-YKK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s3Y-NY-mKh"/>
+                            <constraint firstItem="RyB-JL-YKK" firstAttribute="top" secondItem="7Vt-2J-uPb" secondAttribute="bottom" constant="34" id="tKX-dA-WAl"/>
+                            <constraint firstItem="7Vt-2J-uPb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="y5i-T5-VaO"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EUL-67-JOC"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="saveButton" destination="H4R-PU-6hF" id="Qj3-Jd-Uip"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="313"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon sidebar settings.png" width="137" height="137"/>
+    </resources>
+</document>

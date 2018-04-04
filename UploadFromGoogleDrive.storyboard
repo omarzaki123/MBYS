@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Add a profile picture-->
+        <scene sceneID="2Ng-JD-rjY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="Add a profile picture" id="z5a-Xc-NOD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jOx-kY-FX9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2047.5" y="-696"/>
+        </scene>
+        <!--Google Drive View Controller-->
+        <scene sceneID="78Z-XC-Ah0">
+            <objects>
+                <tableViewController id="huS-fR-pfX" customClass="GoogleDriveViewController" customModule="Mesh" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="HWK-U8-bfO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="googleDriveFileCell" id="ofm-Q1-4BQ">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ofm-Q1-4BQ" id="H8X-Cq-7TZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="huS-fR-pfX" id="jVU-Nz-GeO"/>
+                            <outlet property="delegate" destination="huS-fR-pfX" id="KIG-sB-6e5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="yTd-PN-2Pv">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="eIH-QU-V7m">
+                            <connections>
+                                <action selector="backBarButtonTapped:" destination="huS-fR-pfX" id="rtM-ZZ-gal"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="z2G-X0-BMu" kind="show" identifier="previewResume" id="aHo-oh-QcQ"/>
+                        <segue destination="z5a-Xc-NOD" kind="presentation" identifier="profilePicture" id="tZv-ni-tf3"/>
+                        <segue destination="1Jr-Nt-KuN" kind="presentation" identifier="addResume" id="SSU-gs-2bn"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aWw-mO-YJ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1808" y="-227"/>
+        </scene>
+        <!--addResume-->
+        <scene sceneID="YJA-pV-8VZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="addResume" id="1Jr-Nt-KuN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sJq-PQ-dWW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1808.5" y="-696"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="T85-sw-2Sa">
+            <objects>
+                <viewController id="z2G-X0-BMu" customClass="ResumePreviewViewController" customModule="Mesh" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wdU-8U-W8J"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rsx-co-Kwr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5HB-iG-TTc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jaR-2k-j95">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jaR-2k-j95" firstAttribute="top" secondItem="wdU-8U-W8J" secondAttribute="bottom" id="O8N-Gf-4Kz"/>
+                            <constraint firstItem="jaR-2k-j95" firstAttribute="leading" secondItem="5HB-iG-TTc" secondAttribute="leading" id="PEA-nF-RHa"/>
+                            <constraint firstItem="jaR-2k-j95" firstAttribute="bottom" secondItem="Rsx-co-Kwr" secondAttribute="top" id="s1P-wV-WBX"/>
+                            <constraint firstAttribute="trailing" secondItem="jaR-2k-j95" secondAttribute="trailing" id="vOY-1P-LOU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="Iww-79-wea">
+                        <barButtonItem key="rightBarButtonItem" title="Use" id="XjY-jZ-V48">
+                            <connections>
+                                <segue destination="5uR-VQ-ZsR" kind="presentation" id="y8m-OH-Tzo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webView" destination="jaR-2k-j95" id="wc9-fz-44S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="29r-kk-xG6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2538" y="-238"/>
+        </scene>
+        <!--MasterView-->
+        <scene sceneID="seN-Th-9Dm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NewsFeed" referencedIdentifier="MasterView" id="5uR-VQ-ZsR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TVo-NB-x4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3047.5" y="-248"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QmW-iF-NRy">
+            <objects>
+                <navigationController storyboardIdentifier="UploadFromGoogleDrive" id="cDr-5j-ARi" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CXw-Mv-tc2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="huS-fR-pfX" kind="relationship" relationship="rootViewController" id="mwW-Sm-GfC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="twg-3R-wio" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080" y="-261"/>
+        </scene>
+    </scenes>
+</document>

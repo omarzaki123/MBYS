@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A201w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="calibril.ttf">
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Set Reminder View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="setReminderViewController" customModule="Mesh" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon sidebar reminder" translatesAutoresizingMaskIntoConstraints="NO" id="oFj-8r-8UG">
+                                <rect key="frame" x="30" y="28" width="39" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="B2G-Fm-mqM"/>
+                                    <constraint firstAttribute="width" constant="39" id="GBO-s0-6PJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Reminders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUH-tE-gvD">
+                                <rect key="frame" x="72" y="26" width="208" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="Yrx-5c-wUO"/>
+                                    <constraint firstAttribute="height" constant="34" id="ePQ-ef-mzC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtL-0o-4I1">
+                                <rect key="frame" x="47" y="78" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fp3-Lc-9aZ"/>
+                                    <constraint firstAttribute="width" constant="30" id="xbL-Nd-Pan"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="✓">
+                                    <color key="titleColor" red="0.97254901960784312" green="0.15686274509803921" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reminderToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0gz-11-MYi"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jMS-o6-5Kc">
+                                <rect key="frame" x="102" y="113" width="31" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="31" id="Aqr-JT-SoF"/>
+                                    <constraint firstAttribute="height" constant="30" id="OQR-9V-5Mb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGV-v8-RLq">
+                                <rect key="frame" x="47" y="162" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Apd-Dn-to3"/>
+                                    <constraint firstAttribute="width" constant="30" id="VlZ-oG-Gcp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="✓">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.15686274510000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="autoReminderToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FSt-0u-Ix0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2N-zz-Vd7">
+                                <rect key="frame" x="47" y="246" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2UM-lY-I0M"/>
+                                    <constraint firstAttribute="width" constant="30" id="Moo-VW-nsa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="✓">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.15686274510000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="setDateReminder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iXy-NF-Xre"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remind me every" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HtF-G1-AQR">
+                                <rect key="frame" x="87" y="166" width="126" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="odL-8a-lhs"/>
+                                    <constraint firstAttribute="height" constant="21" id="qSe-jV-lOQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remind me on set date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jex-2C-dMO">
+                                <rect key="frame" x="87" y="252" width="195" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="TBI-dc-PTD"/>
+                                    <constraint firstAttribute="width" constant="195" id="iTm-dL-PwX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="week(s)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yeo-IV-Omh">
+                                <rect key="frame" x="141" y="199" width="56" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="Bej-hB-fcB"/>
+                                    <constraint firstAttribute="height" constant="21" id="qr4-w9-Pnl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="day(s)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOn-6c-vxa">
+                                <rect key="frame" x="141" y="117" width="47" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Rbk-gL-yKe"/>
+                                    <constraint firstAttribute="width" constant="47" id="vji-q6-cWS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rxz-qv-d2U">
+                                <rect key="frame" x="102" y="195" width="31" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2EO-R2-scy"/>
+                                    <constraint firstAttribute="width" constant="31" id="Oyi-Dg-5nn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yED-H3-VvC">
+                                <rect key="frame" x="102" y="281" width="44" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="3V5-eR-gZ2"/>
+                                    <constraint firstAttribute="height" constant="30" id="TFC-tS-pRw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="setMonth:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="uIl-fF-3Bk"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DD" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vNV-J0-ILS">
+                                <rect key="frame" x="154" y="281" width="44" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ite-eY-r86"/>
+                                    <constraint firstAttribute="width" constant="44" id="qhM-5v-JtG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="setDay:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="N3r-cN-gh1"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="YY" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bhk-Pd-nik">
+                                <rect key="frame" x="206" y="281" width="44" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="wKd-YP-OSf"/>
+                                    <constraint firstAttribute="height" constant="30" id="xt8-WK-nf9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="setYear:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="QKN-0k-Gh2"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send follow up notificiation in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCb-PQ-DLb">
+                                <rect key="frame" x="87" y="84" width="220" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="Dp3-dT-une"/>
+                                    <constraint firstAttribute="height" constant="21" id="NcW-gz-IiO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vNV-J0-ILS" firstAttribute="top" secondItem="Jex-2C-dMO" secondAttribute="bottom" constant="8" id="89c-qg-PKs"/>
+                            <constraint firstItem="Rxz-qv-d2U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="102" id="8Mm-oa-IDQ"/>
+                            <constraint firstItem="HtF-G1-AQR" firstAttribute="leading" secondItem="QGV-v8-RLq" secondAttribute="trailing" constant="10" id="9Bj-2F-D5r"/>
+                            <constraint firstItem="BtL-0o-4I1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="47" id="BQj-Fq-pfd"/>
+                            <constraint firstItem="Bhk-Pd-nik" firstAttribute="top" secondItem="Jex-2C-dMO" secondAttribute="bottom" constant="8" id="CW6-fX-1n4"/>
+                            <constraint firstItem="l2N-zz-Vd7" firstAttribute="top" secondItem="QGV-v8-RLq" secondAttribute="bottom" constant="54" id="G1b-Xx-hoX"/>
+                            <constraint firstItem="QGV-v8-RLq" firstAttribute="top" secondItem="BtL-0o-4I1" secondAttribute="bottom" constant="54" id="HS1-1w-GNU"/>
+                            <constraint firstItem="Bhk-Pd-nik" firstAttribute="leading" secondItem="vNV-J0-ILS" secondAttribute="trailing" constant="8" id="JvP-ZU-y2Q"/>
+                            <constraint firstItem="vNV-J0-ILS" firstAttribute="leading" secondItem="yED-H3-VvC" secondAttribute="trailing" constant="8" id="L0D-YP-ZPE"/>
+                            <constraint firstItem="jMS-o6-5Kc" firstAttribute="top" secondItem="mCb-PQ-DLb" secondAttribute="bottom" constant="8" id="MZ4-uv-wnK"/>
+                            <constraint firstItem="l2N-zz-Vd7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="47" id="R90-8P-Pog"/>
+                            <constraint firstItem="oOn-6c-vxa" firstAttribute="leading" secondItem="jMS-o6-5Kc" secondAttribute="trailing" constant="8" id="TW1-0w-Qe4"/>
+                            <constraint firstItem="XUH-tE-gvD" firstAttribute="leading" secondItem="oFj-8r-8UG" secondAttribute="trailing" constant="3" id="TvF-1W-pVo"/>
+                            <constraint firstItem="oOn-6c-vxa" firstAttribute="top" secondItem="mCb-PQ-DLb" secondAttribute="bottom" constant="12" id="WvD-nd-8UJ"/>
+                            <constraint firstItem="BtL-0o-4I1" firstAttribute="top" secondItem="XUH-tE-gvD" secondAttribute="bottom" constant="18" id="Yc1-7h-JJX"/>
+                            <constraint firstItem="XUH-tE-gvD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="6" id="Ye7-yi-UNE"/>
+                            <constraint firstItem="Jex-2C-dMO" firstAttribute="leading" secondItem="l2N-zz-Vd7" secondAttribute="trailing" constant="10" id="aKZ-t0-gAl"/>
+                            <constraint firstItem="Rxz-qv-d2U" firstAttribute="top" secondItem="HtF-G1-AQR" secondAttribute="bottom" constant="8" id="e71-Sx-rnD"/>
+                            <constraint firstItem="Yeo-IV-Omh" firstAttribute="top" secondItem="HtF-G1-AQR" secondAttribute="bottom" constant="12" id="f4b-Js-SgJ"/>
+                            <constraint firstItem="mCb-PQ-DLb" firstAttribute="top" secondItem="XUH-tE-gvD" secondAttribute="bottom" constant="24" id="fp3-nO-E30"/>
+                            <constraint firstItem="oFj-8r-8UG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="ip7-iT-evv"/>
+                            <constraint firstItem="yED-H3-VvC" firstAttribute="top" secondItem="Jex-2C-dMO" secondAttribute="bottom" constant="8" id="ipe-QM-NJw"/>
+                            <constraint firstItem="QGV-v8-RLq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="47" id="l2i-uk-zaX"/>
+                            <constraint firstItem="Yeo-IV-Omh" firstAttribute="leading" secondItem="Rxz-qv-d2U" secondAttribute="trailing" constant="8" id="lWT-Cn-YB2"/>
+                            <constraint firstItem="yED-H3-VvC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="102" id="lcr-YF-TYZ"/>
+                            <constraint firstItem="Jex-2C-dMO" firstAttribute="top" secondItem="Rxz-qv-d2U" secondAttribute="bottom" constant="27" id="mGx-mI-Lig"/>
+                            <constraint firstItem="oFj-8r-8UG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ms4-jG-ats"/>
+                            <constraint firstItem="jMS-o6-5Kc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="102" id="n4S-4P-97u"/>
+                            <constraint firstItem="mCb-PQ-DLb" firstAttribute="leading" secondItem="BtL-0o-4I1" secondAttribute="trailing" constant="10" id="qaX-5b-AD6"/>
+                            <constraint firstItem="HtF-G1-AQR" firstAttribute="top" secondItem="jMS-o6-5Kc" secondAttribute="bottom" constant="23" id="xfg-Tw-bhJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dayOfSetDate" destination="vNV-J0-ILS" id="HDI-i8-WNl"/>
+                        <outlet property="frequencyOfReminder" destination="Rxz-qv-d2U" id="VOy-qL-3KJ"/>
+                        <outlet property="initialFollowUp" destination="jMS-o6-5Kc" id="1BF-sB-hKE"/>
+                        <outlet property="monthOfSetDate" destination="yED-H3-VvC" id="gYN-LJ-kEy"/>
+                        <outlet property="yearOfSetDate" destination="Bhk-Pd-nik" id="EYj-w8-JCS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="349"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon sidebar reminder" width="127" height="70"/>
+    </resources>
+</document>

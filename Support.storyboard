@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="calibril.ttf">
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MeshSupport" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon sidebar settings.png" translatesAutoresizingMaskIntoConstraints="NO" id="zZc-vQ-djz">
+                                <rect key="frame" x="30" y="28" width="37" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="m6i-LL-lE2"/>
+                                    <constraint firstAttribute="width" constant="37" id="z8h-DW-R8x"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Support" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yO3-NU-jXx">
+                                <rect key="frame" x="72" y="34" width="89" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7Sq-uZ-ppJ"/>
+                                    <constraint firstAttribute="width" constant="89" id="PTr-af-hQk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="How Can We Help?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSd-Cu-B8U">
+                                <rect key="frame" x="72" y="86" width="167" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="A19-zt-xjA"/>
+                                    <constraint firstAttribute="height" constant="21" id="pzE-2O-Juj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Please provide a description of your inquiry here." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yGH-6x-lC0">
+                                <rect key="frame" x="72" y="122" width="240" height="245"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="245" id="FWX-hY-Ocf"/>
+                                    <constraint firstAttribute="width" constant="240" id="s3v-f2-OWE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XWI-Z2-LRw">
+                                <rect key="frame" x="72" y="392" width="240" height="30"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y3j-EO-7xr">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="30"/>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSk-u6-AaI">
+                                        <rect key="frame" x="170" y="0.0" width="70" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="arg-sT-neV"/>
+                                            <constraint firstAttribute="width" constant="70" id="xUh-qK-lTL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="21"/>
+                                        <state key="normal" title="Submit">
+                                            <color key="titleColor" red="0.97254901959999995" green="0.15686274510000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="submitSupportInquiry:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qfg-6V-Q61"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="4ik-Oj-2xO"/>
+                                    <constraint firstAttribute="height" constant="30" id="Zvi-n3-0HN"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dSd-Cu-B8U" firstAttribute="top" secondItem="yO3-NU-jXx" secondAttribute="bottom" constant="31" id="8nx-jU-msO"/>
+                            <constraint firstItem="zZc-vQ-djz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="BTm-1L-XCr"/>
+                            <constraint firstItem="dSd-Cu-B8U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fjt-pJ-nIr"/>
+                            <constraint firstItem="yO3-NU-jXx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="PUq-fd-YA0"/>
+                            <constraint firstItem="XWI-Z2-LRw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VjS-iC-5ZE"/>
+                            <constraint firstItem="yO3-NU-jXx" firstAttribute="leading" secondItem="zZc-vQ-djz" secondAttribute="trailing" constant="5" id="X79-tv-rtD"/>
+                            <constraint firstItem="yGH-6x-lC0" firstAttribute="top" secondItem="dSd-Cu-B8U" secondAttribute="bottom" constant="15" id="cjf-Si-Fru"/>
+                            <constraint firstItem="XWI-Z2-LRw" firstAttribute="top" secondItem="yGH-6x-lC0" secondAttribute="bottom" constant="25" id="ftZ-L2-d1x"/>
+                            <constraint firstItem="yGH-6x-lC0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oEe-vz-csl"/>
+                            <constraint firstItem="zZc-vQ-djz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="zQ8-Nr-shl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inquiryBox" destination="yGH-6x-lC0" id="3h1-e2-E2V"/>
+                        <outlet property="submitButton" destination="CSk-u6-AaI" id="vXc-0e-Pxg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="312"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon sidebar settings.png" width="137" height="137"/>
+    </resources>
+</document>

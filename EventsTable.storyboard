@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A201w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="calibril.ttf">
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Events-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="EventsTable" id="BYZ-38-t0r" customClass="Events" customModule="Mesh" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon sidebar calendar-1" translatesAutoresizingMaskIntoConstraints="NO" id="SNO-35-2ac">
+                                <rect key="frame" x="30" y="28" width="34" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="7Hj-3k-teN"/>
+                                    <constraint firstAttribute="width" constant="34" id="cZi-Lt-uak"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calendar Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axK-V2-wAp">
+                                <rect key="frame" x="72" y="26" width="208" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="UnG-HK-tz1"/>
+                                    <constraint firstAttribute="height" constant="34" id="zqn-s2-Dly"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon sidebar settings" translatesAutoresizingMaskIntoConstraints="NO" id="b7Y-4q-VLc">
+                                <rect key="frame" x="30" y="542" width="29" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YDN-cI-MOZ"/>
+                                    <constraint firstAttribute="width" constant="29" id="cBv-3m-3Yz"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBb-Vs-RGo">
+                                <rect key="frame" x="61" y="542" width="284" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ky9-wM-Ua0"/>
+                                    <constraint firstAttribute="width" constant="284" id="nLM-4S-6pR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="25"/>
+                                <state key="normal" title="Calendar Settings">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="eventsSettingsCalled:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cBx-cT-ksA"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Mz-0e-cg0">
+                                <rect key="frame" x="30" y="68" width="540" height="466"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EventCell" id="CCu-v5-HLm" customClass="reminderCell" customModule="Mesh" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="540" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CCu-v5-HLm" id="afI-Vy-NXt">
+                                            <rect key="frame" x="0.0" y="0.0" width="540" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cindy Williams" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSP-f6-ghd">
+                                                    <rect key="frame" x="23" y="-2" width="143" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="143" id="dcc-rc-r51"/>
+                                                        <constraint firstAttribute="height" constant="21" id="sBD-eg-pkK"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thursday, November 18th" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrh-hv-D7Z">
+                                                    <rect key="frame" x="23" y="15" width="133" height="13.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="13.5" id="bjg-FF-4Cw"/>
+                                                        <constraint firstAttribute="width" constant="133" id="eEU-6d-Ql8"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Yale" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBb-8U-uts">
+                                                    <rect key="frame" x="143" y="-2" width="112" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="7B8-cB-vKT"/>
+                                                        <constraint firstAttribute="width" constant="112" id="7FW-qC-iUi"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="14"/>
+                                                    <color key="textColor" red="0.97254901960784312" green="0.15686274509803921" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htY-ZB-G53">
+                                                    <rect key="frame" x="165" y="16" width="49" height="13.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="49" id="Fbu-c0-xUA"/>
+                                                        <constraint firstAttribute="height" constant="13.5" id="z8Y-fl-lEc"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="12"/>
+                                                    <color key="textColor" red="0.97254901960784312" green="0.15686274509803921" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 Oswego Rd, NY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iwm-hG-x35">
+                                                    <rect key="frame" x="23" y="28" width="232" height="13.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="232" id="8Vi-CY-vJd"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="13.5" id="AJJ-Am-FAl"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="232" id="B1a-oW-Nne"/>
+                                                        <constraint firstAttribute="height" constant="13.5" id="HLL-T8-qod"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="WBb-8U-uts" firstAttribute="top" secondItem="afI-Vy-NXt" secondAttribute="top" constant="-1" id="6JP-z1-o87"/>
+                                                <constraint firstItem="htY-ZB-G53" firstAttribute="leading" secondItem="vrh-hv-D7Z" secondAttribute="trailing" constant="9" id="EFb-uk-3pH"/>
+                                                <constraint firstItem="eSP-f6-ghd" firstAttribute="leading" secondItem="afI-Vy-NXt" secondAttribute="leading" constant="23" id="IrK-YA-RKh"/>
+                                                <constraint firstItem="Iwm-hG-x35" firstAttribute="top" secondItem="WBb-8U-uts" secondAttribute="bottom" constant="8" id="Kb1-5p-Ho4"/>
+                                                <constraint firstItem="htY-ZB-G53" firstAttribute="top" secondItem="afI-Vy-NXt" secondAttribute="top" constant="16" id="duM-dT-ywR"/>
+                                                <constraint firstItem="WBb-8U-uts" firstAttribute="leading" secondItem="eSP-f6-ghd" secondAttribute="trailing" constant="-23" id="gSF-Wb-p5V"/>
+                                                <constraint firstItem="eSP-f6-ghd" firstAttribute="top" secondItem="afI-Vy-NXt" secondAttribute="top" constant="-1" id="gaM-fC-fNz"/>
+                                                <constraint firstItem="vrh-hv-D7Z" firstAttribute="leading" secondItem="afI-Vy-NXt" secondAttribute="leading" constant="23" id="nH6-js-cyG"/>
+                                                <constraint firstItem="vrh-hv-D7Z" firstAttribute="top" secondItem="afI-Vy-NXt" secondAttribute="top" constant="15" id="qYL-tK-cE3"/>
+                                                <constraint firstItem="Iwm-hG-x35" firstAttribute="leading" secondItem="afI-Vy-NXt" secondAttribute="leading" constant="23" id="sYQ-Za-Qaw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="contactName" destination="eSP-f6-ghd" id="eNu-73-VVi"/>
+                                            <outlet property="reminderAffiliation" destination="WBb-8U-uts" id="KNh-Xq-vVd"/>
+                                            <outlet property="reminderDate" destination="vrh-hv-D7Z" id="FgS-WQ-gGQ"/>
+                                            <outlet property="reminderLocation" destination="Iwm-hG-x35" id="cNz-9A-D6Q"/>
+                                            <outlet property="reminderTime" destination="htY-ZB-G53" id="Ieb-Pl-eKI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b7Y-4q-VLc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="4Jd-X5-Rx2"/>
+                            <constraint firstItem="SNO-35-2ac" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="FXs-lK-FsB"/>
+                            <constraint firstItem="6Mz-0e-cg0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="KXT-OL-K4w"/>
+                            <constraint firstItem="axK-V2-wAp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="6" id="Lpi-Xs-QtN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="b7Y-4q-VLc" secondAttribute="bottom" constant="28" id="ReL-1p-dX9"/>
+                            <constraint firstItem="SNO-35-2ac" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="T5E-Oe-TeP"/>
+                            <constraint firstItem="SBb-Vs-RGo" firstAttribute="leading" secondItem="b7Y-4q-VLc" secondAttribute="trailing" constant="2" id="apP-QM-Fxc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SBb-Vs-RGo" secondAttribute="bottom" constant="28" id="h9L-jG-w2R"/>
+                            <constraint firstAttribute="trailing" secondItem="6Mz-0e-cg0" secondAttribute="trailing" constant="30" id="iWj-aC-uTZ"/>
+                            <constraint firstItem="6Mz-0e-cg0" firstAttribute="top" secondItem="axK-V2-wAp" secondAttribute="bottom" constant="8" id="lV9-Iz-94D"/>
+                            <constraint firstItem="axK-V2-wAp" firstAttribute="leading" secondItem="SNO-35-2ac" secondAttribute="trailing" constant="8" id="oqM-Ai-ms7"/>
+                            <constraint firstItem="b7Y-4q-VLc" firstAttribute="top" secondItem="6Mz-0e-cg0" secondAttribute="bottom" constant="8" id="z4w-ur-BMf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="eventTable" destination="6Mz-0e-cg0" id="Rs9-ng-4UO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="309"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon sidebar calendar-1" width="98" height="93"/>
+        <image name="icon sidebar settings" width="137" height="137"/>
+    </resources>
+</document>

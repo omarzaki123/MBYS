@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="calibril.ttf">
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Notification Settings View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="NotificationSettings" id="BYZ-38-t0r" customClass="notificationSettingsViewController" customModule="Mesh" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon sidebar settings" translatesAutoresizingMaskIntoConstraints="NO" id="6fj-bI-OOz">
+                                <rect key="frame" x="30" y="28" width="37" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="bgk-a2-xT0"/>
+                                    <constraint firstAttribute="height" constant="36" id="qdg-UT-f17"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uJ-sS-Gl0">
+                                <rect key="frame" x="72" y="34" width="202" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="202" id="JAo-cv-qCp"/>
+                                    <constraint firstAttribute="height" constant="25" id="M8y-Ie-zke"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbu-7j-B2h">
+                                <rect key="frame" x="96" y="111" width="155" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="NHL-Zg-dtd"/>
+                                    <constraint firstAttribute="width" constant="155" id="ayg-vg-xVw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vibrate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVF-ec-9Ig">
+                                <rect key="frame" x="96" y="165" width="65" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="0Lz-1m-j6J"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="Bd9-Ix-451"/>
+                                    <constraint firstAttribute="height" constant="25" id="UPp-nk-iOY"/>
+                                    <constraint firstAttribute="width" constant="65" id="Vfm-dc-Whm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0Lz-1m-j6J"/>
+                                        <exclude reference="Bd9-Ix-451"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e08-27-rr3">
+                                <rect key="frame" x="59" y="108" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="J6h-8g-WVZ"/>
+                                    <constraint firstAttribute="width" constant="30" id="Xan-OH-P36"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="✓">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.15686274510000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleCheckBox:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NEZ-Uv-fwk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obj-Cu-z2R">
+                                <rect key="frame" x="59" y="162" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="4oX-1M-BaL"/>
+                                    <constraint firstAttribute="height" constant="30" id="59S-iY-HXY"/>
+                                    <constraint firstAttribute="width" constant="30" id="who-Aw-UhF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="✓">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.15686274510000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleCheckBox:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tui-dE-zoN"/>
+                                    <action selector="vibrateCheckBox:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PZn-Cp-t4k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="555-fn-CA9">
+                                <rect key="frame" x="59" y="217" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7GA-qu-19N"/>
+                                    <constraint firstAttribute="width" constant="30" id="EnB-8y-cjD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="✓">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.15686274510000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="soundCheckBox:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bIa-rl-cnz"/>
+                                    <action selector="toggleCheckBox:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g7i-T2-d2d"/>
+                                    <action selector="vibrateCheckBox:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RpB-X6-Fva"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sound" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcQ-kj-tBj">
+                                <rect key="frame" x="96" y="220" width="65" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="7PE-92-TH3"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="LsL-3f-MWo"/>
+                                    <constraint firstAttribute="width" constant="65" id="bJG-qV-k4n"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="pLo-Rb-A7k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LsL-3f-MWo"/>
+                                        <exclude reference="pLo-Rb-A7k"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbT-Zz-Vli">
+                                <rect key="frame" x="155" y="277" width="290" height="30"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEC-jD-87z">
+                                        <rect key="frame" x="0.0" y="0.0" width="227" height="30"/>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Sl-oT-Q9W">
+                                        <rect key="frame" x="227" y="0.0" width="63" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="63" id="8bf-tk-dat"/>
+                                            <constraint firstAttribute="height" constant="30" id="m1K-8v-b44"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="21"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" red="0.97254901959999995" green="0.15686274510000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveNotificationSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sHw-i2-Oi9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OJI-Tz-YMb"/>
+                                    <constraint firstAttribute="width" constant="290" id="yAB-Ci-RlJ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qbT-Zz-Vli" firstAttribute="top" secondItem="Rbu-7j-B2h" secondAttribute="bottom" constant="30" id="2pC-ct-0SN"/>
+                            <constraint firstItem="WcQ-kj-tBj" firstAttribute="top" secondItem="fVF-ec-9Ig" secondAttribute="bottom" constant="30" id="7yM-4Z-9tt"/>
+                            <constraint firstItem="6fj-bI-OOz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="DUJ-8o-JqN"/>
+                            <constraint firstItem="obj-Cu-z2R" firstAttribute="top" secondItem="e08-27-rr3" secondAttribute="bottom" constant="24" id="IDA-Mh-LFM"/>
+                            <constraint firstItem="6fj-bI-OOz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="KAN-JP-RXS"/>
+                            <constraint firstItem="0uJ-sS-Gl0" firstAttribute="leading" secondItem="6fj-bI-OOz" secondAttribute="trailing" constant="5" id="Lqa-ha-cbI"/>
+                            <constraint firstItem="0uJ-sS-Gl0" firstAttribute="leading" secondItem="6fj-bI-OOz" secondAttribute="trailing" constant="5" id="Ltm-g1-PHO"/>
+                            <constraint firstItem="555-fn-CA9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="59" id="PTg-vK-ON4"/>
+                            <constraint firstItem="fVF-ec-9Ig" firstAttribute="top" secondItem="Rbu-7j-B2h" secondAttribute="bottom" constant="29" id="QhO-VU-BrI"/>
+                            <constraint firstItem="qbT-Zz-Vli" firstAttribute="top" secondItem="555-fn-CA9" secondAttribute="bottom" constant="30" id="a3z-bh-DDd"/>
+                            <constraint firstItem="Rbu-7j-B2h" firstAttribute="leading" secondItem="e08-27-rr3" secondAttribute="trailing" constant="7" id="gIZ-hq-Gm6"/>
+                            <constraint firstItem="WcQ-kj-tBj" firstAttribute="leading" secondItem="555-fn-CA9" secondAttribute="trailing" constant="7" id="gdS-kh-akA"/>
+                            <constraint firstItem="obj-Cu-z2R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="59" id="gk8-jk-c04"/>
+                            <constraint firstItem="fVF-ec-9Ig" firstAttribute="leading" secondItem="obj-Cu-z2R" secondAttribute="trailing" constant="7" id="hVI-I4-VRC"/>
+                            <constraint firstItem="e08-27-rr3" firstAttribute="top" secondItem="6fj-bI-OOz" secondAttribute="bottom" constant="44" id="hdH-eO-3RW"/>
+                            <constraint firstItem="qbT-Zz-Vli" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lhN-u2-WF7"/>
+                            <constraint firstItem="Rbu-7j-B2h" firstAttribute="top" secondItem="0uJ-sS-Gl0" secondAttribute="bottom" constant="52" id="qAM-rp-QNv"/>
+                            <constraint firstItem="0uJ-sS-Gl0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="rcN-m4-fgx"/>
+                            <constraint firstItem="e08-27-rr3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="59" id="xfB-2l-Jp2"/>
+                            <constraint firstItem="555-fn-CA9" firstAttribute="top" secondItem="obj-Cu-z2R" secondAttribute="bottom" constant="25" id="znC-wv-t9t"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2pC-ct-0SN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="notificationSettingBox" destination="e08-27-rr3" id="7wv-ss-6Jf"/>
+                        <outlet property="soundSettingBox" destination="555-fn-CA9" id="mR9-1L-eep"/>
+                        <outlet property="vibrateSettingBox" destination="obj-Cu-z2R" id="96y-Pl-IGY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="349"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon sidebar settings" width="137" height="137"/>
+    </resources>
+</document>

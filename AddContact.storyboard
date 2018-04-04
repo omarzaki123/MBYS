@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="i75-3a-dlQ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="calibril.ttf">
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Add Contact Manually View Controller-->
+        <scene sceneID="gxW-0b-3Re">
+            <objects>
+                <viewController storyboardIdentifier="AddContact" id="i75-3a-dlQ" customClass="AddContactManuallyViewController" customModule="Mesh" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8v7-RG-Jrs"/>
+                        <viewControllerLayoutGuide type="bottom" id="ApY-BI-PcS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xBC-7H-1Th">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kRQ-u6-Ksh">
+                                <rect key="frame" x="118" y="40" width="186" height="40"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon add manually" translatesAutoresizingMaskIntoConstraints="NO" id="zs9-Zs-ePC">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Q3m-p4-SyF"/>
+                                            <constraint firstAttribute="width" constant="40" id="T0k-44-5zV"/>
+                                            <constraint firstAttribute="height" constant="40" id="XhR-ER-1rV"/>
+                                            <constraint firstAttribute="height" constant="40" id="qLm-6K-tzG"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="T0k-44-5zV"/>
+                                                <exclude reference="qLm-6K-tzG"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Add a Contact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82Z-pR-7m8">
+                                        <rect key="frame" x="50" y="0.0" width="136" height="40"/>
+                                        <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="5Pf-ny-kx2">
+                                <rect key="frame" x="50" y="460" width="500" height="33"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ib-Hu-XgD">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="33"/>
+                                        <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="21"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelButtonPressed:" destination="i75-3a-dlQ" eventType="touchUpInside" id="dDA-C7-0id"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHd-8X-kUK">
+                                        <rect key="frame" x="434" y="0.0" width="66" height="33"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32.5" id="SYu-Mt-6aT"/>
+                                            <constraint firstAttribute="width" constant="66" id="e17-ce-RFq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="21"/>
+                                        <state key="normal" title="Add">
+                                            <color key="titleColor" red="0.97254901959999995" green="0.15686274510000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addButtonPressed:" destination="i75-3a-dlQ" eventType="touchUpInside" id="ZpM-vj-R4K"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="c9y-Wd-t7c">
+                                <rect key="frame" x="50" y="200" width="500" height="230"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2iX-Kv-aNF">
+                                        <rect key="frame" x="0.0" y="0.0" width="500" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vYR-D0-JgQ">
+                                        <rect key="frame" x="0.0" y="50" width="500" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g03-zF-PJN">
+                                        <rect key="frame" x="0.0" y="100" width="500" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XXi-da-A2M">
+                                        <rect key="frame" x="0.0" y="150" width="500" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="phonePad"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Company" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="05D-e2-Y6W">
+                                        <rect key="frame" x="0.0" y="200" width="500" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default profile picture" translatesAutoresizingMaskIntoConstraints="NO" id="CEs-qh-u3m">
+                                <rect key="frame" x="250" y="90" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="01Z-nw-mNu"/>
+                                    <constraint firstAttribute="width" constant="100" id="2DK-Bb-ZgI"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CEs-qh-u3m" firstAttribute="top" secondItem="kRQ-u6-Ksh" secondAttribute="bottom" constant="10" id="1J0-8a-qfY"/>
+                            <constraint firstItem="5Pf-ny-kx2" firstAttribute="leading" secondItem="xBC-7H-1Th" secondAttribute="leadingMargin" constant="30" id="9Ti-oH-wAg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Pf-ny-kx2" secondAttribute="trailing" constant="30" id="HdB-X9-1RL"/>
+                            <constraint firstItem="kRQ-u6-Ksh" firstAttribute="top" secondItem="8v7-RG-Jrs" secondAttribute="bottom" constant="20" id="P1a-Ve-qwG"/>
+                            <constraint firstItem="c9y-Wd-t7c" firstAttribute="top" secondItem="CEs-qh-u3m" secondAttribute="bottom" constant="10" id="cGp-tc-2Rn"/>
+                            <constraint firstItem="5Pf-ny-kx2" firstAttribute="top" secondItem="c9y-Wd-t7c" secondAttribute="bottom" constant="30" id="knA-cJ-scy"/>
+                            <constraint firstItem="kRQ-u6-Ksh" firstAttribute="centerX" secondItem="xBC-7H-1Th" secondAttribute="centerX" id="mZj-aW-hNk"/>
+                            <constraint firstItem="c9y-Wd-t7c" firstAttribute="leading" secondItem="xBC-7H-1Th" secondAttribute="leadingMargin" constant="30" id="oOy-0E-g8G"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="c9y-Wd-t7c" secondAttribute="trailing" constant="30" id="oVW-xh-Ynv"/>
+                            <constraint firstItem="CEs-qh-u3m" firstAttribute="centerX" secondItem="xBC-7H-1Th" secondAttribute="centerX" id="vLW-kZ-Oy7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="oHd-8X-kUK" id="9XL-ZY-kry"/>
+                        <outlet property="companyTextField" destination="05D-e2-Y6W" id="txI-eM-Dca"/>
+                        <outlet property="emailAddressTextField" destination="g03-zF-PJN" id="gO6-Mt-npJ"/>
+                        <outlet property="firstNameTextField" destination="2iX-Kv-aNF" id="01c-0H-RgZ"/>
+                        <outlet property="lastNameTextField" destination="vYR-D0-JgQ" id="kGV-rg-vPv"/>
+                        <outlet property="phoneNumberTextField" destination="XXi-da-A2M" id="gP3-eC-dSC"/>
+                        <outlet property="profilePictureImageView" destination="CEs-qh-u3m" id="zww-d6-J22"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mCc-BP-jni" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="197"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon add manually" width="235" height="235"/>
+        <image name="default profile picture" width="288" height="387"/>
+    </resources>
+</document>

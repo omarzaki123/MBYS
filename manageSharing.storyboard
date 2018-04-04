@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A201w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="calibril.ttf">
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+            <string>Calibri-Light</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Manage Sharing View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="manageSharingViewController" customModule="Mesh" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon resume white" translatesAutoresizingMaskIntoConstraints="NO" id="YbV-Du-oer">
+                                <rect key="frame" x="28" y="28" width="31" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="8eZ-E9-blT"/>
+                                    <constraint firstAttribute="width" constant="31" id="YPD-5l-njB"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="180" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LUT-kr-iIh">
+                                <rect key="frame" x="20" y="71" width="560" height="509"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DocumentCell" id="W2M-7k-K62" customClass="documentCell" customModule="Mesh" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="180"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W2M-7k-K62" id="LFm-3N-amd">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="179"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon resume example" translatesAutoresizingMaskIntoConstraints="NO" id="LDA-d6-i2i">
+                                                    <rect key="frame" x="21" y="46" width="93" height="120"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="PU5-wC-6Q8"/>
+                                                        <constraint firstAttribute="width" constant="93" id="SQA-yr-B2V"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="93" id="V3Z-1p-xpz"/>
+                                                        <constraint firstAttribute="height" constant="120" id="qoA-Ts-3fg"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="PU5-wC-6Q8"/>
+                                                            <exclude reference="V3Z-1p-xpz"/>
+                                                        </mask>
+                                                    </variation>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cover Letter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etd-Ub-MEk">
+                                                    <rect key="frame" x="21" y="17" width="220" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="I91-cY-cid"/>
+                                                        <constraint firstAttribute="width" constant="220" id="taA-jH-vRh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="21"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shared with 77 people" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maY-4F-2hj">
+                                                    <rect key="frame" x="411" y="46" width="141" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="Bos-ki-NRY"/>
+                                                        <constraint firstAttribute="width" constant="141" id="deX-SE-XHa"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="15"/>
+                                                    <color key="textColor" red="0.97254901959999995" green="0.15686274510000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Added on 12/12/16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxW-pg-lyB">
+                                                    <rect key="frame" x="429" y="75" width="123" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="123" id="Ehj-6I-bX5"/>
+                                                        <constraint firstAttribute="height" constant="21" id="WZt-yy-v2f"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="hXe-1f-Lsa"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="157" id="qpb-0B-HVr"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="15"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="hXe-1f-Lsa"/>
+                                                            <exclude reference="qpb-0B-HVr"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmj-XQ-6bX">
+                                                    <rect key="frame" x="446" y="136" width="101" height="30"/>
+                                                    <color key="backgroundColor" red="0.97254901959999995" green="0.15686274510000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="101" id="ON8-pV-yFF"/>
+                                                        <constraint firstAttribute="height" constant="30" id="RKS-gT-Kp6"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="20"/>
+                                                    <state key="normal" title="Edit Sharing">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="editSharing:" destination="W2M-7k-K62" eventType="touchUpInside" id="n3J-v7-89Z"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dxW-pg-lyB" firstAttribute="top" secondItem="maY-4F-2hj" secondAttribute="bottom" constant="8" id="3x4-0Q-76L"/>
+                                                <constraint firstItem="LDA-d6-i2i" firstAttribute="top" secondItem="etd-Ub-MEk" secondAttribute="bottom" constant="8" id="6vq-y4-yEJ"/>
+                                                <constraint firstItem="maY-4F-2hj" firstAttribute="top" secondItem="LFm-3N-amd" secondAttribute="top" constant="46" id="ADx-h3-JaK"/>
+                                                <constraint firstAttribute="trailing" secondItem="mmj-XQ-6bX" secondAttribute="trailing" constant="13" id="JIF-xb-TFU"/>
+                                                <constraint firstAttribute="trailing" secondItem="dxW-pg-lyB" secondAttribute="trailing" constant="8" id="LEW-mG-c5I"/>
+                                                <constraint firstAttribute="bottom" secondItem="mmj-XQ-6bX" secondAttribute="bottom" constant="13.5" id="M7T-6s-uYa"/>
+                                                <constraint firstAttribute="bottom" secondItem="maY-4F-2hj" secondAttribute="bottom" constant="8.5" id="Mdc-rP-vkG"/>
+                                                <constraint firstItem="etd-Ub-MEk" firstAttribute="leading" secondItem="LFm-3N-amd" secondAttribute="leading" constant="21" id="c2W-yc-shK"/>
+                                                <constraint firstItem="LDA-d6-i2i" firstAttribute="leading" secondItem="LFm-3N-amd" secondAttribute="leading" constant="21" id="cf2-LP-flg"/>
+                                                <constraint firstAttribute="trailing" secondItem="maY-4F-2hj" secondAttribute="trailing" constant="8" id="nHO-Gs-gLT"/>
+                                                <constraint firstAttribute="trailing" secondItem="maY-4F-2hj" secondAttribute="trailing" constant="8" id="tMO-sc-mup"/>
+                                                <constraint firstAttribute="bottom" secondItem="LDA-d6-i2i" secondAttribute="bottom" constant="13.5" id="uC1-LB-d5b"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="Mdc-rP-vkG"/>
+                                                    <exclude reference="tMO-sc-mup"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="documentAddDate" destination="dxW-pg-lyB" id="BAA-VR-NoF"/>
+                                            <outlet property="documentImage" destination="LDA-d6-i2i" id="jSn-Cf-FJL"/>
+                                            <outlet property="documentTitle" destination="etd-Ub-MEk" id="IQ8-zP-mqT"/>
+                                            <outlet property="editSharingButton" destination="mmj-XQ-6bX" id="hwH-RS-0JY"/>
+                                            <outlet property="sharedWithCount" destination="maY-4F-2hj" id="2Dh-ku-HAb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manage Sharing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fm3-fb-y2U">
+                                <rect key="frame" x="65" y="33" width="165" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="QoO-3D-Glb"/>
+                                    <constraint firstAttribute="height" constant="26" id="qsT-OV-ZDI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Calibri-Light" family="Calibri" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fm3-fb-y2U" firstAttribute="leading" secondItem="YbV-Du-oer" secondAttribute="trailing" constant="6" id="3YW-uG-qfc"/>
+                            <constraint firstItem="YbV-Du-oer" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="28" id="5IF-DJ-Cjx"/>
+                            <constraint firstItem="YbV-Du-oer" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="99T-ER-Mji"/>
+                            <constraint firstItem="LUT-kr-iIh" firstAttribute="top" secondItem="YbV-Du-oer" secondAttribute="bottom" constant="8" id="VKi-LI-Ikm"/>
+                            <constraint firstItem="LUT-kr-iIh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="frT-Ln-XGA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LUT-kr-iIh" secondAttribute="bottom" constant="20" id="kEH-kz-Yq3"/>
+                            <constraint firstItem="Fm3-fb-y2U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="13" id="tXb-Oh-09H"/>
+                            <constraint firstAttribute="trailing" secondItem="LUT-kr-iIh" secondAttribute="trailing" constant="20" id="x6p-2f-X0f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableOfSharedDocs" destination="LUT-kr-iIh" id="pBf-6g-X2E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="311"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon resume example" width="253" height="348"/>
+        <image name="icon resume white" width="90" height="124"/>
+    </resources>
+</document>
